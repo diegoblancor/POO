@@ -9,8 +9,8 @@ public class Caneta {
     public boolean isAberta(){
         return aberta;
     }
-    public String desenhar(boolean estaAberta, int x1, int y1, int x2, int y2){
-        if (estaAberta){
+    public String desenhar(int x1, int y1, int x2, int y2){
+        if (aberta){
             //calcular a distância percorrida
             double distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
             //debitar do nível de tinta
