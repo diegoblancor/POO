@@ -6,18 +6,21 @@ public class Contador {
     private int valorAtual;
 
     //Métodos
-    public void atribuirValor (int novoValor) {
-        this.valorAtual = novoValor;
+
+    //atribuir valor ao contador
+    public void atribuirValor (int valor) {
+        this.valorAtual = valor;
     }
 
     public void incrementar() {
+
         this.valorAtual++;
+
     }
 
     public int obterValor() {
         return this.valorAtual;
     }
-
 
 }
 

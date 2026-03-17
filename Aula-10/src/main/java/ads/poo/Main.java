@@ -4,27 +4,23 @@ public class Main {
     public static void main(String[] args) {
 
         //Contador
-        Contador meuContador = new Contador(); //Objeto instanciado
-        meuContador.atribuirValor(1);
+        Contador meuContador = new Contador();
+        meuContador.atribuirValor(10);
         meuContador.incrementar();
-        System.out.println("Valor: " + meuContador.obterValor());
+        System.out.println("Valor do Contador: " + meuContador.obterValor());
 
+        //Personagem
+        Personagem p = new Personagem();
+        p.atacar();
+        p.tomarDano(20.0);
+
+        //Batedeira
+        Batedeira b = new Batedeira();
+        b.ligar();
+        b.ajustarVelocidade(5);
+
+        //Disciplina
+        Disciplina disc = new Disciplina(); //instancia o objeto da classe Disciplina
+        disc.exibirInformacoes(); //troca de mensagem para exibir os dados
     }
 }
-
-    public static void main(String[] args) {
-
-        //Criando o objeto na memória
-        Personagem heroi = new Personagem();
-
-        //Modificar atributos
-        heroi.setNome("Arqueiro");
-        heroi.setStr(15);
-
-        //Estado e comportamento
-        System.out.println("Personagem criado: " + heroi.getNome());
-
-        //Método que representa a ação
-        heroi.atacar();
-    }
-

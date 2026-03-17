@@ -2,28 +2,18 @@ package ads.poo;
 
 public class Personagem {
 
-    private String nome;
-    private int pontos_vida;
-    private int força;
-    private int destreza;
+        //Atributos
+        private String nome = "Batman";
+        private int nivel = 1;
+        private double pontosVida = 100.0;
 
 
-    public void atacar() {
-        System.out.println(this.nome + " realizou um ataque!");
+        //Métodos
+        public void atacar() {
+            System.out.println(nome + " realizou um ataque!");
+        }
+
+        public void tomarDano(double dano) {
+            this.pontosVida -= dano;
+        }
     }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getNome() {
-        return this.nome;
-    }
-
-
-
-
-
-
-
-}
