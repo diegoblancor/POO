@@ -15,7 +15,7 @@ classDiagram
 classDiagram
     direction LR
     class Carro {
-        - marca: String:
+        - marca: String
         - propulsor:Motor
         + Carro(ma: String, mo: Motor)
         + acelerar(v: int): void
